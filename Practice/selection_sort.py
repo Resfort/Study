@@ -10,4 +10,4 @@ for i in range(len(my_list)):
     if my_list[i] < my_list[lowest_index]:
         lowest_index = i
 
-        
+my_list = swap(my_list, i, lowest_index)

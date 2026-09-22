@@ -15,9 +15,6 @@ def guess_number():
             guessed = True
             print(f"Congratulations! You've guessed the number {number_to_guess} in {attempts} attempts.")
 
-print("Welcome to the Number Guessing Game!")
+print("Welcome to the Number Guessing Game!" + "\n you have to guess a number between 1 and 100." + "\n Good luck!")
 
-print("You have to guess a number between 1 and 100.")
-
-input("Press Enter to start the game...")
-
+guess_number()

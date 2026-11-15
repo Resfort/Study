@@ -1,6 +1,3 @@
-Файл `pyproject.toml`:
-
-```toml
 [build-system]
 requires = ["setuptools>=68.0"]
 build-backend = "setuptools.build_meta"
@@ -8,17 +5,17 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "terminal-rpg"
 version = "0.1.0"
-description = "Модульная Terminal RPG на Python с чистой архитектурой"
-requires-python = ">=3.11"
+description = "Модульная Terminal RPG на Python 3.15"
+requires-python = ">=3.15"
 dependencies = [
-    "rich>=13.7.0",
+    "rich>=13.9.0",
 ]
 
 [project.optional-dependencies]
 dev = [
-    "pytest>=8.1.0",
-    "mypy>=1.9.0",
-    "ruff>=0.3.0",
+    "pytest>=8.3.0",
+    "mypy>=1.13.0",
+    "ruff>=0.7.0",
 ]
 
 [project.scripts]
@@ -30,5 +27,5 @@ testpaths = ["tests"]
 addopts = "-v"
 
 [tool.mypy]
-python_version = "3.11"
+python_version = "3.15"
 strict = true

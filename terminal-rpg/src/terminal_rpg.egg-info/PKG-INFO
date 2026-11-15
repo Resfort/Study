@@ -1,0 +1,10 @@
+Metadata-Version: 2.4
+Name: terminal-rpg
+Version: 0.1.0
+Summary: Модульная Terminal RPG на Python 3.15
+Requires-Python: >=3.15
+Requires-Dist: rich>=13.9.0
+Provides-Extra: dev
+Requires-Dist: pytest>=8.3.0; extra == "dev"
+Requires-Dist: mypy>=1.13.0; extra == "dev"
+Requires-Dist: ruff>=0.7.0; extra == "dev"

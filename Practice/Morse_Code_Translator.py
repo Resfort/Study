@@ -9,10 +9,6 @@ def morse_code_translator(text):
         ("U", "..-"), ("V", "...-"), ("W", ".--"), ("X", "-..-"), ("Y", "-.--"),
         ("Z", "--..")
     ]
+    result = ""
     for letter in text:
-        for char, morse in dictionary:
-            if letter.upper() == char:
-                print(morse, end=" ")
-                break
-        else:
-            print(" ", end=" ")  # Print space for unrecognized characters
+        letter = letter.upper()

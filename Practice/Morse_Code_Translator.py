@@ -1,6 +1,4 @@
-
 def morse_code_translator(text):
-    text = input("Enter text to translate to Morse code: ")
     morse_code = {
         "A": ".-", "B": "-...", "C": "-.-.", "D": "-..", "E": ".",
         "F": "..-.", "G": "--.", "H": "....", "I": "..", "J": ".---",
@@ -19,4 +17,7 @@ def morse_code_translator(text):
 
     return result.strip()
 
-print(morse_code_translator("SOS"))
+# Теперь запрос и вывод происходят снаружи:
+user_input = input("Enter text to translate to Morse code: ")
+translated = morse_code_translator(user_input)
+print(translated)

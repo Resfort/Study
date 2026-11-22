@@ -1,7 +1,7 @@
 
 def morse_code_translator(text):
     text = input("Enter text to translate to Morse code: ")
-    dictionary = [
+    morse_code = [
         ("A", ".-"), ("B", "-..."), ("C", "-.-."), ("D", "-.."), ("E", "."),
         ("F", "..-."), ("G", "--."), ("H", "...."), ("I", ".."), ("J", ".---"),
         ("K", "-.-"), ("L", ".-.."), ("M", "--"), ("N", "-."), ("O", "---"),
@@ -12,3 +12,9 @@ def morse_code_translator(text):
     result = ""
     for letter in text:
         letter = letter.upper()
+        if letter in morse_code:
+            result += f"{morse_code[letter]} "
+        elif letter == " ":
+            result += "/ "
+
+    return result

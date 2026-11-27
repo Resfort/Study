@@ -17,3 +17,16 @@ class Item:
     item_type: ItemType
     power: int
     description: str = ""
+
+class Character:
+    name: str
+    max_hp: int
+    hp: int
+    base_attack: int
+    base_defense: int
+    level: int
+    xp: int
+    gold: int
+    inventory: list[Item] = field(default_factory=list)
+    equipped_weapon: Item | None = None
+    equipped_armor: Item | None = None
